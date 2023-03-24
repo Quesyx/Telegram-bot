@@ -9,9 +9,9 @@ import (
 )
 
 func devices() {
-	url := "http://swcm1-chel2.is74.ru:8090/api/gateways?limit=50"
+	url := "http://"
 	// Create a Bearer string by appending string access token
-	var bearer = "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5X2lkIjoiNDY4ODk0OWUtYWQ4My00Y2VmLTgxYWMtMDAyZTI1NDM5NmJmIiwiYXVkIjoiYXMiLCJpc3MiOiJhcyIsIm5iZiI6MTY3OTQ5MDczNCwic3ViIjoiYXBpX2tleSJ9.cB5QSAWckp92L86iiXX6rSyjzKQzNaU8lZlJjPbhYdI"
+	var bearer = "Bearer " + "token"
 	// Create a new request using http
 	req, err := http.NewRequest("GET", url, nil)
 
